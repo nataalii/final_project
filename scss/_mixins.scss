@@ -1,0 +1,19 @@
+@mixin flex-props($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: row;
+}
+
+@mixin width-params($max) {
+    max-width: $max;
+    width: 100%;
+}
+
+@mixin bg-props{
+    background-color: $color1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

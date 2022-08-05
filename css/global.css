@@ -1,0 +1,154 @@
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body .main-section .s-1 .container, body .main-section .header {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+body .main-section {
+  background-image: url("../images/banner-bg.jpg");
+  height: 920px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body .main-section .header {
+  background-color: white;
+  border-radius: 50px;
+  padding: 15px 0;
+  position: absolute;
+  top: 30px;
+}
+body .main-section .header > div {
+  margin-left: 30px;
+}
+body .main-section .header nav > ul {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 50px;
+}
+body .main-section .header li > a {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  letter-spacing: 1px;
+}
+body .main-section .header li > a:hover, body .main-section .header li > .active {
+  padding: 10px 15px;
+  color: white;
+  background-color: rgb(140, 107, 219);
+  border-radius: 20px;
+  font-size: 16px;
+}
+body .main-section .s-1 .container {
+  position: absolute;
+  margin-top: 250px;
+}
+body .main-section .s-1 .container > .container-wrapper {
+  width: 550px;
+}
+body .main-section .s-1 .container > .container-wrapper h3, body .main-section .s-1 .container > .container-wrapper h1, body .main-section .s-1 .container > .container-wrapper p {
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family: "Roboto";
+}
+body .main-section .s-1 .container > .container-wrapper h3 {
+  font-size: 22px;
+}
+body .main-section .s-1 .container > .container-wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+body .main-section .s-1 .container > .container-wrapper p {
+  font-size: 15px;
+  line-height: 2;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button {
+  border-radius: 50px;
+  max-width: 180px;
+  width: 100%;
+  height: 50px;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button p {
+  margin-top: 7px;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid rgb(140, 107, 219);
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) {
+  background-color: rgb(140, 107, 219);
+  border: none;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover {
+  background-color: rgb(140, 107, 219);
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover {
+  background-color: white;
+  color: rgb(140, 107, 219);
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > p:hover {
+  color: rgb(140, 107, 219);
+}/*# sourceMappingURL=global.css.map */

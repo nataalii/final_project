@@ -1,0 +1,113 @@
+body{  
+    .main-section{
+        background-image: url('../images/banner-bg.jpg');
+        height: 920px;
+        @include bg-props; 
+        position: relative; 
+
+        .header{
+            @extend %container-props;
+            background-color: $color3;
+            border-radius: 50px;
+            padding: 15px 0;
+            position: absolute;
+            top: 30px;
+
+            
+            & > div{
+                margin-left: 30px;
+            }
+    
+            nav > ul{
+                width: 550px;
+                @include flex-props(space-between, center);
+                margin-right: 50px;
+            }
+    
+            li > a{
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                color: black;
+                letter-spacing: 1px;
+            }
+    
+            li > a:hover, li > .active{
+                padding: 10px 15px;
+                color: $color3;
+                background-color: $color2;
+                border-radius: 20px;  
+                font-size: 16px;         
+            }
+     
+        }
+
+        .s-1{
+            .container{
+                position: absolute;
+
+                @extend %container-props;
+                margin-top: 250px;
+            
+                & > .container-wrapper{
+                    width: 550px;
+            
+                     h3,  h1, p{
+                        color: $color3;
+                        margin-bottom: 20px;
+                        line-height: 1.2;
+                        font-family: 'Roboto';
+                    }
+                    h3{
+                        font-size: 22px;
+                    }
+                    h1{
+                        font-size: 48px;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 15px;
+                        line-height: 2;
+                    }
+            
+                    & > .button-wrapper button{
+                        border-radius: 50px;
+                        @include width-params(180px);
+                        height: 50px;
+                        p{
+                            margin-top: 7px;
+                        }
+            
+                        &:nth-child(1){
+                            background-color: transparent;
+                            border: 1px solid $color2;
+                        }
+            
+                        &:nth-child(2){
+                            background-color: $color2;
+                            border: none;
+                        }
+            
+                        &:nth-child(1):hover{
+                            background-color: $color2;
+                        }
+            
+                        &:nth-child(2):hover{
+                            background-color: $color3;
+                            color: $color2;
+                        }
+                        &:nth-child(2) > p:hover{
+                            color: $color2;
+                        }
+            
+                    }
+            
+            
+                }
+            }
+        }
+    }
+    
+    
+}
+
+

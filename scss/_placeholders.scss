@@ -1,0 +1,7 @@
+%container-props{
+    @include width-params($container-width);
+    @include flex-props(space-between, center);
+    right: 0;
+    left: 0;
+    margin: auto;
+}
