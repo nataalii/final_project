@@ -49,7 +49,7 @@ a {
   box-sizing: border-box;
 }
 
-body .main-section .s-1 .container, body .main-section .header {
+.s-3 .cards-wrapper-2, .s-3 .container, .s-2 .cards-wrapper, body .main-section .s-1 .container, body .main-section .header {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -97,7 +97,7 @@ body .main-section .header li > a {
 body .main-section .header li > a:hover, body .main-section .header li > .active {
   padding: 10px 15px;
   color: white;
-  background-color: rgb(140, 107, 219);
+  background-color: rgb(111, 60, 231);
   border-radius: 20px;
   font-size: 16px;
 }
@@ -127,8 +127,7 @@ body .main-section .s-1 .container > .container-wrapper p {
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button {
   border-radius: 50px;
-  max-width: 180px;
-  width: 100%;
+  width: 180px;
   height: 50px;
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button p {
@@ -136,19 +135,194 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) {
   background-color: transparent;
-  border: 1px solid rgb(140, 107, 219);
+  border: 1px solid rgb(111, 60, 231);
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) {
-  background-color: rgb(140, 107, 219);
+  background-color: rgb(111, 60, 231);
   border: none;
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover {
-  background-color: rgb(140, 107, 219);
+  background-color: rgb(111, 60, 231);
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover {
   background-color: white;
-  color: rgb(140, 107, 219);
+  color: rgb(111, 60, 231);
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > p:hover {
-  color: rgb(140, 107, 219);
+  color: rgb(111, 60, 231);
+}
+
+.s-2 {
+  background-image: url("../images/dark-bg.jpg");
+  height: 1423px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.s-2 .line, .s-2 .line-2 {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(111, 60, 231);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 div > h2 {
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 600;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 div > h2 > span {
+  color: rgb(111, 60, 231);
+}
+.s-2 .cards-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 .cards-wrapper .card {
+  width: 170px;
+  height: 170px;
+  background-color: #282828;
+  border-radius: 30px;
+  border: 0.1em solid gray;
+  position: relative;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.s-2 .cards-wrapper .card .circle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 .cards-wrapper .card .circle > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 .cards-wrapper .card > h5 {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  text-align: center;
+}
+.s-2 .cards-wrapper .card:hover {
+  transform: scale(1.1);
+}
+.s-2 .line-2 {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-2 > div:nth-child(5) h2 {
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s-3 {
+  background-image: url("../images/main-bg.jpg");
+  height: 609px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.s-3 .container {
+  position: absolute;
+  margin-top: 100px;
+}
+.s-3 .container .left-block .line-3 {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.s-3 .container .left-block > h1 {
+  font-size: 32px;
+  color: white;
+  font-family: "Roboto";
+}
+.s-3 .container .right-block > button {
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+}
+.s-3 .container .right-block > button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.s-3 .container .right-block > button p {
+  font-size: 15px;
+  color: white;
+}
+.s-3 .container .right-block > button p:hover {
+  color: rgb(111, 60, 231);
+}
+.s-3 .cards-wrapper-2 {
+  position: absolute;
+  margin-top: 260px;
+}
+.s-3 .cards-wrapper-2 .cards {
+  width: 330px;
+}
+.s-3 .cards-wrapper-2 .cards .circle {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.s-3 .cards-wrapper-2 .cards .circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-3 .cards-wrapper-2 .cards h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+.s-3 .cards-wrapper-2 .cards p {
+  color: white;
+  line-height: 1.5;
+}
+.s-3 .cards-wrapper-2 .line {
+  height: 200px;
+  width: 1px;
+  background-color: rgb(204, 206, 207);
+  margin-right: 5px;
+  margin-top: 15px;
+}
+.s-3 .cards-wrapper-2 .number {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Roboto";
+  margin-left: -5px;
 }/*# sourceMappingURL=global.css.map */
