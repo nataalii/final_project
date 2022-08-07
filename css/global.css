@@ -540,11 +540,16 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   background-color: rgb(111, 60, 231);
   border: none;
   width: 180px;
-  color: white;
   margin-right: 40px;
+  transition: all 0.3s linear;
+}
+.header-section .titles .button-wrapper button:nth-child(1) a {
+  color: white;
 }
 .header-section .titles .button-wrapper button:nth-child(1):hover {
   background-color: white;
+}
+.header-section .titles .button-wrapper button:nth-child(1):hover a {
   color: rgb(111, 60, 231);
 }
 .header-section .titles .button-wrapper button:nth-child(2) {
@@ -554,11 +559,13 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   background-color: transparent;
   border: 1px solid rgb(111, 60, 231);
   width: 180px;
+  transition: all 0.3s linear;
+}
+.header-section .titles .button-wrapper button:nth-child(2) a {
   color: white;
 }
 .header-section .titles .button-wrapper button:nth-child(2):hover {
   background-color: rgb(111, 60, 231);
-  color: white;
 }
 
 .images-section {
@@ -579,10 +586,11 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   top: 450px;
   margin: auto;
   position: absolute;
-  overflow: hidden;
 }
 .images-section .image-wrapper .card {
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .images-section .image-wrapper .card img {
   width: 420px;
@@ -598,7 +606,9 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   border-radius: 30px;
   opacity: 90%;
   border: 0.1em solid gray;
-  overflow: hidden;
+  display: none;
+  animation-name: slide;
+  animation-duration: 1s;
 }
 .images-section .image-wrapper .card .artist-box h5 {
   font-size: 22px;
@@ -627,6 +637,17 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 .images-section .image-wrapper .card .artist-box > div p span {
   color: rgb(111, 60, 231);
   font-weight: 600;
+}
+.images-section .image-wrapper .card:hover .artist-box {
+  display: block;
+}
+@keyframes slide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 30%;
+  }
 }
 .images-section .container {
   margin-top: 380px;
@@ -923,4 +944,14 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 .create-nft-section .create-nft-wrapper .wrapper-content form button:hover {
   background-color: white;
   color: rgb(111, 60, 231);
+}
+
+.author-section {
+  background-image: url("../images/dark-bg.jpg");
+  height: 1423px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }/*# sourceMappingURL=global.css.map */

@@ -496,21 +496,29 @@ footer{
             
             button:nth-child(1){
                 @include button($color2, none);
-                color: $color3;
                 margin-right: 40px;
+                transition: $button-transiton;
+                a{
+                    color: $color3;
+                }
                 &:hover{
                     background-color: $color3;
-                    color: $color2;
+                    a{
+                        color: $color2;
+                    }
                 }         
            }
         
             button:nth-child(2){
                 @include button;
-                color: $color3;
+                transition: $button-transiton;
+                a{
+                    color: $color3;
+                }
 
                 &:hover{
                     background-color: $color2;
-                    color: $color3;
+                  
                 }
             } 
         }
@@ -538,11 +546,12 @@ footer{
         top: 450px;
         margin: auto;
         position: absolute;
-        overflow: hidden;
 
         
         .card{
             position: relative;
+            overflow: hidden;
+            cursor: pointer;
             
             img{
                 width: 420px;
@@ -559,7 +568,9 @@ footer{
                 border-radius: 30px;
                 opacity: 90%;
                 border: $border-params;
-                overflow: hidden;
+                display: none;
+                animation-name: slide;
+                animation-duration: 1s;
                 
                 h5{
                     font-size: 22px;
@@ -590,7 +601,27 @@ footer{
                         }
                     }
                 }
+
+              
             }
+            &:hover{
+                .artist-box{
+                    display: block;
+                }
+            }
+            @keyframes  slide{
+                from {
+                    margin-left: 100%;
+                }
+        
+                to {
+                    margin-left: 30%;
+                }
+            }
+
+
+            
+
         }
 
     }
@@ -908,4 +939,12 @@ footer{
         }
     }
 
+}
+
+
+.author-section{
+    background-image: url('../images/dark-bg.jpg');
+    height: 1423px;
+    @include bg-props;
+    position: relative;
 }
