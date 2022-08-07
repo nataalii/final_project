@@ -49,7 +49,7 @@ a {
   box-sizing: border-box;
 }
 
-.s-4 .container, .images-section .card-wrapper, .images-section .container, .s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, .main-section .s-1 .container, .header-section .s-1 .container, .main-section .header, .header-section .header {
+.create-nft-section .create-nft-wrapper, .s-4 .container, .images-section .card-wrapper, .images-section .container, .s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, .main-section .s-1 .container, .header-section .s-1 .container, .main-section .header, .header-section .header {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -525,6 +525,41 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 .header-section .titles > p span {
   color: rgb(145, 145, 145);
 }
+.header-section .titles .button-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+.header-section .titles .button-wrapper button:nth-child(1) {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 180px;
+  color: white;
+  margin-right: 40px;
+}
+.header-section .titles .button-wrapper button:nth-child(1):hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
+}
+.header-section .titles .button-wrapper button:nth-child(2) {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgb(111, 60, 231);
+  width: 180px;
+  color: white;
+}
+.header-section .titles .button-wrapper button:nth-child(2):hover {
+  background-color: rgb(111, 60, 231);
+  color: white;
+}
 
 .images-section {
   background-image: url("../images/dark-bg.jpg");
@@ -782,4 +817,110 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 }
 .s-4 .container .item img {
   border-radius: 50%;
+}
+
+.create-nft-section {
+  background-image: url("../images/dark-bg-half.jpg");
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+}
+.create-nft-section .titles-wrapper .line {
+  width: 150px;
+  height: 2px;
+  background-color: rgb(111, 60, 231);
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.create-nft-section .titles-wrapper h5 {
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 25%;
+}
+.create-nft-section .titles-wrapper h5 span {
+  color: rgb(111, 60, 231);
+}
+.create-nft-section .create-nft-wrapper {
+  background-color: #282828;
+  height: 400px;
+  position: relative;
+  top: 35%;
+  border: 0.1em solid gray;
+  border-radius: 30px;
+  box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+}
+.create-nft-section .create-nft-wrapper .wrapper-content {
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form .input-box {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form .input-box:nth-child(4) input, .create-nft-section .create-nft-wrapper .wrapper-content form .input-box:nth-child(5) input {
+  width: 505px;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form input[type=text] {
+  width: 330px;
+  padding: 13px 20px;
+  border-radius: 20px;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  margin-right: 17px;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form input[type=text]::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form label {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 12px;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form input[type=file] {
+  font-size: 18px;
+  margin-top: 10px;
+  color: gray;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 680px;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s linear;
+  margin-top: 10px;
+}
+.create-nft-section .create-nft-wrapper .wrapper-content form button:hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
 }/*# sourceMappingURL=global.css.map */
