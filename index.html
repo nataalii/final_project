@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <section class="main-section">
@@ -50,8 +52,8 @@
                           free css templates.
                     </p>
                     <div class="button-wrapper">
-                        <button type="submit"><p>Explore Top NFTs</p></button>
-                        <button type="submit"><p>Watch Our Videos</p></button>
+                        <button><a href="">Explore Top NFTs</a></button>
+                        <button><a href="https://www.youtube.com/templatemo">Watch Our Videos</a></button>
                     </div>
                 </div>
                 <img src="images/banner-1.png" alt="banner image">
@@ -109,6 +111,58 @@
         <div class="title-2">
             <h2>Explore Some Hot  <span>Collections </span>In Market.</h2>
         </div>
+
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper collection-cards-wrapper">
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                
+                
+            </div>     
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <section class="s-3">
@@ -162,6 +216,69 @@
         </div>
         
     </section>
-      
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <img src="images/logo.png" alt=" logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Odio, quas quo quasi, asperiores magni possimus repellendus 
+                    architecto consequatur </p>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li>Useful Links</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Contact Info</li>
+                    <li>
+                        <a href="mailto:someone@gmail.com"><i class="fa-solid fa-envelope-open"></i>natalia.charkviani.1@btu.edu.ge</a> 
+                    </li>
+                    <li>
+                        <a href="tel:+995 32 222 222"><i class="fa-solid fa-phone"></i>+995 32 222 222</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Rustaveli+St,+Borzhomi/@41.8471048,43.3939202,17z/data=!3m1!4b1!4m9!1m2!2m1!1srustaveli+st!3m5!1s0x40433996826566bb:0x7a5ec012ead814f!8m2!3d41.8471009!4d43.3981474!15sCgxydXN0YXZlbGkgc3SSAQVyb3V0ZQ">
+                            <i class="fa-solid fa-location-dot"></i>Rustaveli st3. 12</a>
+                    </li>
+                </ul>
+            </div>
+
+           
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script> 
 </body>
 </html>

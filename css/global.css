@@ -49,7 +49,7 @@ a {
   box-sizing: border-box;
 }
 
-.s-3 .cards-wrapper-2, .s-3 .container, .s-2 .cards-wrapper, body .main-section .s-1 .container, body .main-section .header {
+.s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, body .main-section .s-1 .container, body .main-section .header {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -93,6 +93,7 @@ body .main-section .header li > a {
   font-family: "Roboto", sans-serif;
   color: black;
   letter-spacing: 1px;
+  transition: all 0.3s linear;
 }
 body .main-section .header li > a:hover, body .main-section .header li > .active {
   padding: 10px 15px;
@@ -112,7 +113,7 @@ body .main-section .s-1 .container > .container-wrapper h3, body .main-section .
   color: white;
   margin-bottom: 20px;
   line-height: 1.2;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 body .main-section .s-1 .container > .container-wrapper h3 {
   font-size: 22px;
@@ -127,29 +128,49 @@ body .main-section .s-1 .container > .container-wrapper p {
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button {
   border-radius: 50px;
-  width: 180px;
+  cursor: pointer;
   height: 50px;
-}
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button p {
-  margin-top: 7px;
-}
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) {
   background-color: transparent;
   border: 1px solid rgb(111, 60, 231);
+  width: 180px;
+  transition: all 0.3s linear;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) > a {
+  color: white;
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
   background-color: rgb(111, 60, 231);
   border: none;
+  width: 180px;
+  box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > a {
+  color: white;
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover {
   background-color: rgb(111, 60, 231);
 }
 body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover {
   background-color: white;
+}
+body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover a {
   color: rgb(111, 60, 231);
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > p:hover {
-  color: rgb(111, 60, 231);
+body .main-section .s-1 .container > img {
+  transition: all 2s linear;
+}
+body .main-section .s-1 .container > img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 30px 33px 25px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 33px 25px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 33px 25px -4px rgba(0, 0, 0, 0.51);
 }
 
 .s-2 {
@@ -173,7 +194,7 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
 .s-2 div > h2 {
   font-size: 30px;
   color: white;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   position: absolute;
   top: 13%;
@@ -228,6 +249,9 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
 }
 .s-2 .cards-wrapper .card:hover {
   transform: scale(1.1);
+  box-shadow: 30px 24px 32px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 24px 32px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 24px 32px -4px rgba(0, 0, 0, 0.51);
 }
 .s-2 .line-2 {
   top: 45%;
@@ -238,6 +262,87 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.s-2 .container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 470px;
+}
+.s-2 .container .collection-cards-wrapper {
+  width: 1000px;
+  margin: auto;
+}
+.s-2 .container .collection-cards-wrapper .card {
+  cursor: pointer;
+}
+.s-2 .container .collection-cards-wrapper .card img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  max-width: 310px;
+  width: 100%;
+  border: 0.1em solid gray;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info {
+  max-width: 310px;
+  width: 100%;
+  height: 193px;
+  background-color: #282828;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 0.1em solid gray;
+  margin-top: -5px;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text {
+  max-width: 280px;
+  width: 100%;
+  padding-top: 30px;
+  margin: auto;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text hr {
+  margin: 20px 0;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div {
+  display: flex;
+  justify-content: space-between;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div > p {
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div > p > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div > p:nth-child(2) {
+  text-align: end;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 230px;
+  transition: 0.3s all linear;
+  transform: translateX(17%);
+  margin-top: 10px;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info button a {
+  color: white;
+}
+.s-2 .container .collection-cards-wrapper .card .card-info button:hover {
+  background-color: white a;
+  background-color-color: rgb(111, 60, 231);
 }
 
 .s-3 {
@@ -262,25 +367,26 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
 .s-3 .container .left-block > h1 {
   font-size: 32px;
   color: white;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 .s-3 .container .right-block > button {
   border-radius: 50px;
-  width: 200px;
+  cursor: pointer;
   height: 50px;
   background-color: rgb(111, 60, 231);
   border: none;
+  width: 180px;
+  transition: 0.3s all linear;
 }
 .s-3 .container .right-block > button:hover {
   background-color: white;
-  cursor: pointer;
+}
+.s-3 .container .right-block > button:hover p {
+  color: rgb(111, 60, 231);
 }
 .s-3 .container .right-block > button p {
   font-size: 15px;
   color: white;
-}
-.s-3 .container .right-block > button p:hover {
-  color: rgb(111, 60, 231);
 }
 .s-3 .cards-wrapper-2 {
   position: absolute;
@@ -323,6 +429,66 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
   color: white;
   font-weight: 600;
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin-left: -5px;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  height: 220px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 50px;
+  max-width: 1120px;
+  width: 100%;
+  margin: auto;
+}
+footer .container .footer-wrapper {
+  max-width: 200px;
+  width: 100%;
+}
+footer .container .footer-wrapper > img {
+  height: 40px;
+}
+footer .container .footer-wrapper > p {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 13px;
+  width: 100%;
+}
+footer .container .footer-list {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+footer .container .footer-list li {
+  color: rgb(111, 60, 231);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+footer .container .footer-list li:nth-child(1) {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .container .footer-list ul:nth-child(3) li a {
+  color: white;
+  font-size: 18px;
+}
+footer .container .footer-list ul:nth-child(3) li a > i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: rgb(111, 60, 231);
 }/*# sourceMappingURL=global.css.map */

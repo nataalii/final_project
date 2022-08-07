@@ -28,3 +28,12 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin button($bg-color: transparent, $border: 1px solid $color2, $width: 180px) {
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+    background-color: $bg-color;
+    border: $border;
+    width: $width;
+
+}
