@@ -49,7 +49,7 @@ a {
   box-sizing: border-box;
 }
 
-.s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, body .main-section .s-1 .container, body .main-section .header {
+.s-4 .container, .images-section .card-wrapper, .images-section .container, .s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, .main-section .s-1 .container, .header-section .s-1 .container, .main-section .header, .header-section .header {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -61,26 +61,29 @@ a {
   margin: auto;
 }
 
-body .main-section {
+.main-section {
   background-image: url("../images/banner-bg.jpg");
   height: 920px;
+}
+
+.main-section, .header-section {
   background-color: purple;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
-body .main-section .header {
+.main-section .header, .header-section .header {
   background-color: white;
   border-radius: 50px;
   padding: 15px 0;
   position: absolute;
   top: 30px;
 }
-body .main-section .header > div {
+.main-section .header > div, .header-section .header > div {
   margin-left: 30px;
 }
-body .main-section .header nav > ul {
+.main-section .header nav > ul, .header-section .header nav > ul {
   width: 550px;
   display: flex;
   justify-content: space-between;
@@ -88,45 +91,45 @@ body .main-section .header nav > ul {
   flex-direction: row;
   margin-right: 50px;
 }
-body .main-section .header li > a {
+.main-section .header li > a, .header-section .header li > a {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   color: black;
   letter-spacing: 1px;
   transition: all 0.3s linear;
 }
-body .main-section .header li > a:hover, body .main-section .header li > .active {
+.main-section .header li > a:hover, .main-section .header li > .active, .header-section .header li > a:hover, .header-section .header li > .active {
   padding: 10px 15px;
   color: white;
   background-color: rgb(111, 60, 231);
   border-radius: 20px;
   font-size: 16px;
 }
-body .main-section .s-1 .container {
+.main-section .s-1 .container, .header-section .s-1 .container {
   position: absolute;
   margin-top: 250px;
 }
-body .main-section .s-1 .container > .container-wrapper {
+.main-section .s-1 .container > .container-wrapper, .header-section .s-1 .container > .container-wrapper {
   width: 550px;
 }
-body .main-section .s-1 .container > .container-wrapper h3, body .main-section .s-1 .container > .container-wrapper h1, body .main-section .s-1 .container > .container-wrapper p {
+.main-section .s-1 .container > .container-wrapper h3, .main-section .s-1 .container > .container-wrapper h1, .main-section .s-1 .container > .container-wrapper p, .header-section .s-1 .container > .container-wrapper h3, .header-section .s-1 .container > .container-wrapper h1, .header-section .s-1 .container > .container-wrapper p {
   color: white;
   margin-bottom: 20px;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
 }
-body .main-section .s-1 .container > .container-wrapper h3 {
+.main-section .s-1 .container > .container-wrapper h3, .header-section .s-1 .container > .container-wrapper h3 {
   font-size: 22px;
 }
-body .main-section .s-1 .container > .container-wrapper h1 {
+.main-section .s-1 .container > .container-wrapper h1, .header-section .s-1 .container > .container-wrapper h1 {
   font-size: 48px;
   font-weight: 700;
 }
-body .main-section .s-1 .container > .container-wrapper p {
+.main-section .s-1 .container > .container-wrapper p, .header-section .s-1 .container > .container-wrapper p {
   font-size: 15px;
   line-height: 2;
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button, .header-section .s-1 .container > .container-wrapper > .button-wrapper button {
   border-radius: 50px;
   cursor: pointer;
   height: 50px;
@@ -135,10 +138,10 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
   width: 180px;
   transition: all 0.3s linear;
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) > a {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) > a, .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1) > a {
   color: white;
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2), .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) {
   border-radius: 50px;
   cursor: pointer;
   height: 50px;
@@ -149,22 +152,22 @@ body .main-section .s-1 .container > .container-wrapper > .button-wrapper button
   -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > a {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > a, .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2) > a {
   color: white;
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover, .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(1):hover {
   background-color: rgb(111, 60, 231);
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover, .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover {
   background-color: white;
 }
-body .main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover a {
+.main-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover a, .header-section .s-1 .container > .container-wrapper > .button-wrapper button:nth-child(2):hover a {
   color: rgb(111, 60, 231);
 }
-body .main-section .s-1 .container > img {
+.main-section .s-1 .container > img, .header-section .s-1 .container > img {
   transition: all 2s linear;
 }
-body .main-section .s-1 .container > img:hover {
+.main-section .s-1 .container > img:hover, .header-section .s-1 .container > img:hover {
   transform: scale(1.1);
   border-radius: 20px;
   cursor: pointer;
@@ -183,7 +186,7 @@ body .main-section .s-1 .container > img:hover {
   position: relative;
 }
 .s-2 .line, .s-2 .line-2 {
-  width: 100px;
+  width: 150px;
   height: 2px;
   background-color: rgb(111, 60, 231);
   position: absolute;
@@ -491,4 +494,292 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   margin-right: 10px;
   font-size: 16px;
   color: rgb(111, 60, 231);
+}
+
+.header-section {
+  background-image: url("../images/heading-bg.jpg");
+  height: 550px;
+  position: relative;
+}
+.header-section .titles {
+  width: 700px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+}
+.header-section .titles > h4, .header-section .titles > h1, .header-section .titles > p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header-section .titles > h4 {
+  font-size: 20px;
+}
+.header-section .titles > h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.header-section .titles > p span {
+  color: rgb(145, 145, 145);
+}
+
+.images-section {
+  background-image: url("../images/dark-bg.jpg");
+  height: 1600px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.images-section .image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1320px;
+  right: 0;
+  left: 0;
+  top: 450px;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+}
+.images-section .image-wrapper .card {
+  position: relative;
+}
+.images-section .image-wrapper .card img {
+  width: 420px;
+  border-radius: 30px;
+}
+.images-section .image-wrapper .card .artist-box {
+  width: 270px;
+  height: 170px;
+  background-color: #282828;
+  margin-top: -220px;
+  margin-left: 120px;
+  position: absolute;
+  border-radius: 30px;
+  opacity: 90%;
+  border: 0.1em solid gray;
+  overflow: hidden;
+}
+.images-section .image-wrapper .card .artist-box h5 {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  width: 250px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.images-section .image-wrapper .card .artist-box > div {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.images-section .image-wrapper .card .artist-box > div img {
+  width: 50px;
+  margin-right: 30px;
+}
+.images-section .image-wrapper .card .artist-box > div p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.images-section .image-wrapper .card .artist-box > div p span {
+  color: rgb(111, 60, 231);
+  font-weight: 600;
+}
+.images-section .container {
+  margin-top: 380px;
+  position: absolute;
+}
+.images-section .container .left-block .line {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(111, 60, 231);
+  margin-bottom: 30px;
+}
+.images-section .container .left-block h4 {
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.images-section .container .left-block h4 span {
+  color: rgb(111, 60, 231);
+}
+.images-section .container form {
+  display: flex;
+}
+.images-section .container form input, .images-section .container form select {
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  margin-right: 10px;
+  border: 0.1em solid gray;
+  color: white;
+}
+.images-section .container form input::placeholder, .images-section .container form select::placeholder {
+  color: white;
+}
+.images-section .container form input option, .images-section .container form select option {
+  background: rgb(44, 44, 44);
+  color: white;
+}
+.images-section .container form input[type=text] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.images-section .container form button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 100px;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s linear;
+}
+.images-section .container form button:hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
+  border: 1px solid rgb(111, 60, 231);
+}
+.images-section .card-wrapper {
+  margin-top: 40%;
+  position: absolute;
+  flex-wrap: wrap;
+}
+.images-section .card-wrapper .card-item {
+  width: 260px;
+  height: 450px;
+  background-color: #282828;
+  border: 0.1em solid gray;
+  border-radius: 30px;
+  opacity: 95%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+.images-section .card-wrapper .card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+}
+.images-section .card-wrapper .card-item .card-item-content {
+  width: 210px;
+  margin: auto;
+}
+.images-section .card-wrapper .card-item .card-item-content > img:nth-child(1) {
+  border-radius: 50%;
+  margin-left: 40%;
+}
+.images-section .card-wrapper .card-item .card-item-content > img:nth-child(2) {
+  border-radius: 20px;
+  height: 170px;
+  width: 210px;
+}
+.images-section .card-wrapper .card-item .card-item-content h5 {
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 35px 0;
+}
+.images-section .card-wrapper .card-item .card-item-content .card-item-text {
+  display: flex;
+  justify-content: space-between;
+}
+.images-section .card-wrapper .card-item .card-item-content .card-item-text p {
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+.images-section .card-wrapper .card-item .card-item-content .card-item-text p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.images-section .card-wrapper .card-item button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s linear;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.images-section .card-wrapper .card-item button:hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
+  border: 1px solid rgb(111, 60, 231);
+}
+
+.s-4 {
+  background-image: url("../images/main-bg.jpg");
+  height: 609px;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.s-4 .sellers-header {
+  width: 400px;
+  position: absolute;
+  padding-top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.s-4 .sellers-header .line {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.s-4 .sellers-header h4 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.s-4 .container {
+  margin-top: 20%;
+  position: absolute;
+  flex-wrap: wrap;
+}
+.s-4 .container .item {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.s-4 .container .item h6, .s-4 .container .item p {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.s-4 .container .item small {
+  font-size: 14px;
+  font-weight: 300;
+}
+.s-4 .container .item img {
+  border-radius: 50%;
 }/*# sourceMappingURL=global.css.map */

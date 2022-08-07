@@ -37,3 +37,9 @@
     width: $width;
 
 }
+
+@mixin line-params($width: 150px, $height: 2px, $bg-color: $color2){
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+}
