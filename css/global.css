@@ -76,7 +76,7 @@ a {
 .main-section .header, .header-section .header {
   background-color: white;
   border-radius: 50px;
-  padding: 15px 0;
+  padding: 10px 0;
   position: absolute;
   top: 30px;
 }
