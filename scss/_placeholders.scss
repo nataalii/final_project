@@ -6,3 +6,86 @@
     margin: auto;
 }
 
+
+%card-items{
+    .card-wrapper{
+        @extend %container-props;
+        margin-top: 40%;
+        position: absolute;
+        flex-wrap: wrap;
+
+        .card-item{
+            width: 260px;
+            height: 450px;
+            background-color: $color4;
+            border: $border-params;
+            border-radius: 30px;
+            opacity: 95%;
+            transition: $card-transition;
+            cursor: pointer;
+            margin-bottom: 80px;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 30px 25px 54px -4px rgba(0,0,0,0.51);
+                -webkit-box-shadow: 30px 25px 54px -4px rgba(0,0,0,0.51);
+                -moz-box-shadow: 30px 25px 54px -4px rgba(0,0,0,0.51);
+            }
+
+            .card-item-content{
+                width: 210px;
+                margin: auto;
+
+                & > img:nth-child(1){
+                    border-radius: 50%;
+                    margin-left: 40%;
+                }
+                & > img:nth-child(2){
+                    border-radius: 20px;
+                    height: 170px;
+                    width: 210px;
+                }
+                h5{
+                    @include font-params(20px, 300);
+                    margin: 35px 0;
+                }
+                
+
+                .card-item-text{
+                    display: flex;
+                    justify-content: space-between;
+
+                    p{
+                        margin-top: 10px;
+                        @include font-params(14px, 300);
+                        line-height: 1.5;
+                        span{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+            }
+
+            button{
+                @include button($color2, none, 150px);
+                @include font-params(14px, 300);
+                transition: $button-transiton;
+                margin-left: 20%;
+                margin-top: 15%;
+        
+                &:hover{
+                    background-color: $color3;
+                    color: $color2;
+                    border: 1px solid $color2;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+

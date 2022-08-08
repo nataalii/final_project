@@ -44,3 +44,10 @@
     background-color: $bg-color;
 }
 
+@mixin font-params($size: 18px,$weight: 600, $color:$color3, $family: $font-1) {
+    font-size: $size;
+    color: $color;
+    font-family: $family;
+    font-weight: $weight;
+
+}

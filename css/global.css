@@ -49,7 +49,7 @@ a {
   box-sizing: border-box;
 }
 
-.create-nft-section .create-nft-wrapper, .s-4 .container, .images-section .card-wrapper, .images-section .container, .s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, .main-section .s-1 .container, .header-section .s-1 .container, .main-section .header, .header-section .header {
+.author-section .left-block, .author-section .container, .create-nft-section .create-nft-wrapper, .s-4 .container, .images-section .container, .s-3 .cards-wrapper-2, .s-3 .container, .s-2 .container, .s-2 .cards-wrapper, .main-section .s-1 .container, .header-section .s-1 .container, .main-section .header, .header-section .header, .author-section .card-wrapper, .images-section .card-wrapper {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -59,6 +59,85 @@ a {
   right: 0;
   left: 0;
   margin: auto;
+}
+
+.author-section .card-wrapper, .images-section .card-wrapper {
+  margin-top: 40%;
+  position: absolute;
+  flex-wrap: wrap;
+}
+.author-section .card-wrapper .card-item, .images-section .card-wrapper .card-item {
+  width: 260px;
+  height: 450px;
+  background-color: #282828;
+  border: 0.1em solid gray;
+  border-radius: 30px;
+  opacity: 95%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+.author-section .card-wrapper .card-item:hover, .images-section .card-wrapper .card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
+}
+.author-section .card-wrapper .card-item .card-item-content, .images-section .card-wrapper .card-item .card-item-content {
+  width: 210px;
+  margin: auto;
+}
+.author-section .card-wrapper .card-item .card-item-content > img:nth-child(1), .images-section .card-wrapper .card-item .card-item-content > img:nth-child(1) {
+  border-radius: 50%;
+  margin-left: 40%;
+}
+.author-section .card-wrapper .card-item .card-item-content > img:nth-child(2), .images-section .card-wrapper .card-item .card-item-content > img:nth-child(2) {
+  border-radius: 20px;
+  height: 170px;
+  width: 210px;
+}
+.author-section .card-wrapper .card-item .card-item-content h5, .images-section .card-wrapper .card-item .card-item-content h5 {
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 35px 0;
+}
+.author-section .card-wrapper .card-item .card-item-content .card-item-text, .images-section .card-wrapper .card-item .card-item-content .card-item-text {
+  display: flex;
+  justify-content: space-between;
+}
+.author-section .card-wrapper .card-item .card-item-content .card-item-text p, .images-section .card-wrapper .card-item .card-item-content .card-item-text p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.author-section .card-wrapper .card-item .card-item-content .card-item-text p span, .images-section .card-wrapper .card-item .card-item-content .card-item-text p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.author-section .card-wrapper .card-item button, .images-section .card-wrapper .card-item button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 150px;
+  font-size: 14px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  transition: all 0.3s linear;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.author-section .card-wrapper .card-item button:hover, .images-section .card-wrapper .card-item button:hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
+  border: 1px solid rgb(111, 60, 231);
 }
 
 .main-section {
@@ -93,8 +172,9 @@ a {
 }
 .main-section .header li > a, .header-section .header li > a {
   font-size: 15px;
+  color: rgb(109, 109, 109);
   font-family: "Roboto", sans-serif;
-  color: black;
+  font-weight: 600;
   letter-spacing: 1px;
   transition: all 0.3s linear;
 }
@@ -241,8 +321,9 @@ a {
 }
 .s-2 .cards-wrapper .card > h5 {
   position: absolute;
-  color: white;
   font-size: 24px;
+  color: white;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   top: 70%;
   left: 50%;
@@ -305,9 +386,9 @@ a {
 }
 .s-2 .container .collection-cards-wrapper .card .card-info .card-info-text h4 {
   font-size: 20px;
-  font-weight: 600;
   color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 .s-2 .container .collection-cards-wrapper .card .card-info .card-info-text hr {
   margin: 20px 0;
@@ -317,9 +398,10 @@ a {
   justify-content: space-between;
 }
 .s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div > p {
-  color: white;
   font-size: 16px;
+  color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   line-height: 1.6;
 }
 .s-2 .container .collection-cards-wrapper .card .card-info .card-info-text > div > p > span {
@@ -371,6 +453,7 @@ a {
   font-size: 32px;
   color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 .s-3 .container .right-block > button {
   border-radius: 50px;
@@ -384,10 +467,10 @@ a {
 .s-3 .container .right-block > button:hover {
   background-color: white;
 }
-.s-3 .container .right-block > button:hover p {
+.s-3 .container .right-block > button:hover a {
   color: rgb(111, 60, 231);
 }
-.s-3 .container .right-block > button p {
+.s-3 .container .right-block > button a {
   font-size: 15px;
   color: white;
 }
@@ -429,10 +512,10 @@ a {
   margin-top: 15px;
 }
 .s-3 .cards-wrapper-2 .number {
-  color: white;
-  font-weight: 600;
   font-size: 18px;
+  color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
   margin-left: -5px;
 }
 
@@ -463,9 +546,10 @@ footer .container .footer-wrapper > img {
 }
 footer .container .footer-wrapper > p {
   margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-  color: white;
   font-size: 13px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   width: 100%;
 }
 footer .container .footer-list {
@@ -477,8 +561,10 @@ footer .container .footer-list {
   flex-direction: row;
 }
 footer .container .footer-list li {
-  color: rgb(111, 60, 231);
   font-size: 16px;
+  color: rgb(111, 60, 231);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin-bottom: 8px;
 }
 footer .container .footer-list li:nth-child(1) {
@@ -498,7 +584,7 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 
 .header-section {
   background-image: url("../images/heading-bg.jpg");
-  height: 550px;
+  height: 600px;
   position: relative;
 }
 .header-section .titles {
@@ -613,10 +699,10 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 .images-section .image-wrapper .card .artist-box h5 {
   font-size: 22px;
   color: white;
-  text-align: center;
-  width: 250px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  text-align: center;
+  width: 250px;
   margin-top: 30px;
 }
 .images-section .image-wrapper .card .artist-box > div {
@@ -642,10 +728,10 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   display: block;
 }
 @keyframes slide {
-  from {
+  0% {
     margin-left: 100%;
   }
-  to {
+  100% {
     margin-left: 29%;
   }
 }
@@ -707,81 +793,6 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   color: rgb(111, 60, 231);
   border: 1px solid rgb(111, 60, 231);
 }
-.images-section .card-wrapper {
-  margin-top: 40%;
-  position: absolute;
-  flex-wrap: wrap;
-}
-.images-section .card-wrapper .card-item {
-  width: 260px;
-  height: 450px;
-  background-color: #282828;
-  border: 0.1em solid gray;
-  border-radius: 30px;
-  opacity: 95%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-  margin-bottom: 80px;
-}
-.images-section .card-wrapper .card-item:hover {
-  transform: scale(1.05);
-  box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 30px 25px 54px -4px rgba(0, 0, 0, 0.51);
-}
-.images-section .card-wrapper .card-item .card-item-content {
-  width: 210px;
-  margin: auto;
-}
-.images-section .card-wrapper .card-item .card-item-content > img:nth-child(1) {
-  border-radius: 50%;
-  margin-left: 40%;
-}
-.images-section .card-wrapper .card-item .card-item-content > img:nth-child(2) {
-  border-radius: 20px;
-  height: 170px;
-  width: 210px;
-}
-.images-section .card-wrapper .card-item .card-item-content h5 {
-  font-size: 20px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin: 35px 0;
-}
-.images-section .card-wrapper .card-item .card-item-content .card-item-text {
-  display: flex;
-  justify-content: space-between;
-}
-.images-section .card-wrapper .card-item .card-item-content .card-item-text p {
-  margin-top: 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
-.images-section .card-wrapper .card-item .card-item-content .card-item-text p span {
-  font-size: 18px;
-  font-weight: 600;
-}
-.images-section .card-wrapper .card-item button {
-  border-radius: 50px;
-  cursor: pointer;
-  height: 50px;
-  background-color: rgb(111, 60, 231);
-  border: none;
-  width: 150px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  transition: all 0.3s linear;
-  margin-left: 20%;
-  margin-top: 15%;
-}
-.images-section .card-wrapper .card-item button:hover {
-  background-color: white;
-  color: rgb(111, 60, 231);
-  border: 1px solid rgb(111, 60, 231);
-}
 
 .s-4 {
   background-image: url("../images/main-bg.jpg");
@@ -809,8 +820,8 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 }
 .s-4 .sellers-header h4 {
   font-size: 30px;
-  font-family: "Roboto", sans-serif;
   color: white;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 .s-4 .container {
@@ -826,8 +837,8 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   margin-bottom: 30px;
 }
 .s-4 .container .item h6, .s-4 .container .item p {
-  color: white;
   font-size: 20px;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -859,8 +870,8 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   position: absolute;
 }
 .create-nft-section .titles-wrapper h5 {
-  color: white;
   font-size: 30px;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   top: 38%;
@@ -907,9 +918,10 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   padding: 13px 20px;
   border-radius: 20px;
   background-color: rgb(29, 28, 28);
-  color: white;
   font-size: 16px;
+  color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   border: none;
   margin-right: 17px;
 }
@@ -918,10 +930,11 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   font-weight: 600;
 }
 .create-nft-section .create-nft-wrapper .wrapper-content form label {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  color: white;
   margin-bottom: 12px;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 .create-nft-section .create-nft-wrapper .wrapper-content form input[type=file] {
   font-size: 18px;
@@ -935,9 +948,10 @@ footer .container .footer-list ul:nth-child(3) li a > i {
   background-color: rgb(111, 60, 231);
   border: none;
   width: 680px;
-  color: white;
   font-size: 15px;
+  color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   transition: all 0.3s linear;
   margin-top: 10px;
 }
@@ -948,10 +962,121 @@ footer .container .footer-list ul:nth-child(3) li a > i {
 
 .author-section {
   background-image: url("../images/dark-bg.jpg");
-  height: 1423px;
+  height: 1100px;
   background-color: purple;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+.author-section .container {
+  position: absolute;
+  margin-top: 10%;
+}
+.author-section .container .image-wrapper {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.author-section .container .image-wrapper img {
+  border-radius: 50%;
+}
+.author-section .container .image-wrapper p {
+  font-size: 18px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.author-section .container .image-wrapper p span {
+  color: rgb(111, 60, 231);
+  font-size: 15px;
+}
+.author-section .container .followers-card {
+  width: 440px;
+  height: 170px;
+  background-color: #282828;
+  border: 0.1em solid gray;
+  border-radius: 20px;
+}
+.author-section .container .followers-card .followers-card-content {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370px;
+  margin: auto;
+  margin-top: 20px;
+}
+.author-section .container .followers-card .followers-card-content .like-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.author-section .container .followers-card .followers-card-content .like-section i {
+  color: rgb(111, 60, 231);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.author-section .container .followers-card .followers-card-content .like-section p {
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.author-section .container .followers-card .followers-card-content .like-section p span {
+  color: rgb(111, 60, 231);
+  font-size: 18px;
+}
+.author-section .container .followers-card .followers-card-content .follower-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.author-section .container .followers-card .followers-card-content .follower-section p {
+  font-size: 18px;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.author-section .container .followers-card .followers-card-content .follower-section button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgb(111, 60, 231);
+  border: none;
+  width: 220px;
+  font-size: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  transition: all 0.3s linear;
+}
+.author-section .container .followers-card .followers-card-content .follower-section button:hover {
+  background-color: white;
+  color: rgb(111, 60, 231);
+}
+.author-section .left-block {
+  position: absolute;
+  margin-top: 27%;
+  display: inline;
+}
+.author-section .left-block .line {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(111, 60, 231);
+  margin-bottom: 30px;
+}
+.author-section .left-block > h4 {
+  font-size: 32px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.author-section .left-block > h4 span {
+  color: rgb(111, 60, 231);
 }/*# sourceMappingURL=global.css.map */
