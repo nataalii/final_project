@@ -8,12 +8,6 @@
 
 
 %card-items{
-    .card-wrapper{
-        @extend %container-props;
-        margin-top: 40%;
-        position: absolute;
-        flex-wrap: wrap;
-
         .card-item{
             width: 260px;
             height: 450px;
@@ -24,6 +18,8 @@
             transition: $card-transition;
             cursor: pointer;
             margin-bottom: 80px;
+            margin-right: 10px;
+            margin-left: 10px;
 
             &:hover{
                 transform: scale(1.05);
@@ -33,7 +29,8 @@
             }
 
             .card-item-content{
-                width: 210px;
+                max-width: 210px;
+                width: 90%;
                 margin: auto;
 
                 & > img:nth-child(1){
@@ -43,7 +40,8 @@
                 & > img:nth-child(2){
                     border-radius: 20px;
                     height: 170px;
-                    width: 210px;
+                    max-width: 210px;
+                    width: 100%;
                 }
                 h5{
                     @include font-params(20px, 300);
@@ -72,8 +70,8 @@
                 @include button($color2, none, 150px);
                 @include font-params(14px, 300);
                 transition: $button-transiton;
-                margin-left: 20%;
-                margin-top: 15%;
+                margin-left: 30px;
+                margin-top: 30px;
         
                 &:hover{
                     background-color: $color3;
@@ -83,7 +81,16 @@
                 }
             }
         }
-    }
+        @media (max-width: 1170px) {
+            max-width: 650px;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 560px) {
+            .card-item{
+                width: 80%;
+            }
+        }
 }
 
 
