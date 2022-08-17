@@ -9,6 +9,26 @@
     <title>Create Your NFT</title>
 </head>
 <body>
+    <section class="modal-s">
+        <div  id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <form action="submit" id="form">
+                    <h1>Authorization</h1>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"> <br>
+                    <p class="email-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" placeholder="Password"> <br>
+                    <p class="password-error"  style="color: red; height: 25px; font-size: 16px;"></p>
+                    <button id="login" type="submit" >Log in</button>
+                </form>
+                <div>
+                    <img src="../images/butterfly.webp" alt="butterfly">
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="header-section">
         <header>
             <div class="header">
@@ -29,6 +49,8 @@
                         <li>
                             <a href="../pages/create.html" class="active">Create Yours</a>
                         </li>
+                        <button type="submit">Log in</button>
+
                     </ul>
                 </nav>
                 <div class="burger-bar">
@@ -91,6 +113,7 @@
         </div>
     </section>
 
+    <script src="../app.js"></script>
 
     
 </body>

@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
+    <section class="modal-s">
+        <div  id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <form action="submit" id="form">
+                    <h1>Authorization</h1>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"> <br>
+                    <p class="email-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" placeholder="Password"> <br>
+                    <p class="password-error"  style="color: red; height: 25px; font-size: 16px;"></p>
+                    <button id="login" type="submit" >Log in</button>
+                </form>
+                <div>
+                    <img src="./images/butterfly.webp" alt="butterfly">
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="header-section">
         <header>
             <div class="header">
@@ -30,6 +50,7 @@
                         <li>
                             <a href="../pages/create.html">Create Yours</a>
                         </li>
+                        <button type="submit">Log in</button>
                     </ul>
                 </nav>
                 <div class="burger-bar">
@@ -295,21 +316,21 @@
 
             <div class="footer-list">
                 <ul>
-                    <li>Useful Links</li>
+                    <li>Useful Links <i class="fa-solid fa-angle-down"></i></li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                 </ul>
                 <ul>
-                    <li>Privacy</li>
+                    <li>Privacy <i class="fa-solid fa-angle-down"></i></li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                     <li>Lorem Ipsum</li>
                 </ul>
                 <ul>
-                    <li>Contact Info</li>
+                    <li>Contact Info <i class="fa-solid fa-angle-down"></i></li>
                     <li>
                         <a href="mailto:someone@gmail.com"><i class="fa-solid fa-envelope-open"></i>natalia.charkviani.1@btu.edu.ge</a> 
                     </li>
@@ -328,6 +349,7 @@
         
     </footer>
 
+    <script src="../app.js"></script>
 
     
 </body>

@@ -12,6 +12,26 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
+    <section class="modal-s">
+        <div  id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <form action="submit" id="form">
+                    <h1>Authorization</h1>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"> <br>
+                    <p class="email-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" placeholder="Password"> <br>
+                    <p class="password-error"  style="color: red; height: 25px; font-size: 16px;"></p>
+                    <button id="login" type="submit" >Log in</button>
+                </form>
+                <div>
+                    <img src="./images/butterfly.webp" alt="butterfly">
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="main-section">
         <header>
             <div class="header">
@@ -32,6 +52,8 @@
                         <li>
                             <a href="pages/create.html">Create Yours</a>
                         </li>
+                        <button type="button" class="loginBtn">Log in</button>
+
                     </ul>
                 </nav>
                 <div class="burger-bar">
@@ -62,6 +84,7 @@
         </section>
     
     </section>
+
  
     <section class="s-2">
         <div class="line"></div>
@@ -263,6 +286,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+    <script src="./app.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
